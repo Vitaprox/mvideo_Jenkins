@@ -1,3 +1,4 @@
-**/target
+**/allure-results
+**/surefire-reports
 **/build
 **/workspace.xml
