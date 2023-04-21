@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Все тесты]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="test(failed)" verbose="0">
+    <classes>
+      <class name="tests.HomeTests">
+        <methods>
+          <include name="checkHeaderButtonsActiveAndDisplayed"/>
+          <include name="checkThatProductsAddedToCartWithRequiredQuantityAfterRemove"/>
+          <include name="before"/>
+          <include name="after"/>
+          <include name="checkMultipleProductsHaveBeenAddedToCart"/>
+          <include name="configOptions"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.HomeTests -->
+      <class name="tests.ShoppingCartTests">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+          <include name="setUp"/>
+          <include name="configOptions"/>
+          <include name="checkTransitionToShoppingCart"/>
+        </methods>
+      </class> <!-- tests.ShoppingCartTests -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Все тесты] -->
