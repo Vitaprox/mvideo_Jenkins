@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Все тесты" parallel="methods">
+    <test name="test" thread-count="2">
+        <groups>
+            <run>
+                <exclude name="bug"/>
+            </run>
+        </groups>
+        <classes>
+<!--            <class name="tests.ShoppingCartTests"/>-->
+            <class name="tests.HomeTests"/>
+<!--            <class name="tests.ListingTests"/>-->
+<!--            <class name="tests.WishlistPageTests"></class>-->
+        </classes>
+    </test>
+</suite>
