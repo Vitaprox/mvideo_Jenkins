@@ -22,24 +22,23 @@ public class AbstractTest {
         //Configuration.holdBrowserOpen = true;
         Configuration.pageLoadTimeout = 60000;
         //Configuration.browserSize = "1600x920";
+        Configuration.browser = "chrome";
     }
 
-    @BeforeClass(alwaysRun = true)
-    public static void setUp() {
-        //Определяем какой браузер будем использовать
-        Configuration.browser = "chrome";
-        //Url удалённого веб драйвера
-        Configuration.remote = "http://localhost:4444/wd/hub";
-        //Размер окна браузера
-        //Создаём объект класса DesiredCapabilities, используется как настройка  вашей конфигурации с помощью пары ключ-значение
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        //Включить поддержку отображения экрана браузера во время выполнения теста
-        capabilities.setCapability("enableVNC", true);
-        //Включение записи видео в процессе выполнения тестов
-        capabilities.setCapability("enableVideo", true);
-        //Переопределяем Browser capabilities
-        Configuration.browserCapabilities = capabilities;
-    }
+    // @BeforeClass(alwaysRun = true)
+    // public static void setUp() {
+    //     //Url удалённого веб драйвера
+    //     Configuration.remote = "http://localhost:4444/wd/hub";
+    //     //Размер окна браузера
+    //     //Создаём объект класса DesiredCapabilities, используется как настройка  вашей конфигурации с помощью пары ключ-значение
+    //     DesiredCapabilities capabilities = new DesiredCapabilities();
+    //     //Включить поддержку отображения экрана браузера во время выполнения теста
+    //     capabilities.setCapability("enableVNC", true);
+    //     //Включение записи видео в процессе выполнения тестов
+    //     capabilities.setCapability("enableVideo", true);
+    //     //Переопределяем Browser capabilities
+    //     Configuration.browserCapabilities = capabilities;
+    // }
 
     @BeforeMethod(alwaysRun = true)
     public void before(){
