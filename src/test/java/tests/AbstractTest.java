@@ -8,6 +8,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.*;
 import steps.Steps;
 
+import java.util.List;
+import java.util.Map;
+
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -22,6 +25,8 @@ public class AbstractTest {
         Configuration.pageLoadTimeout = 60000;
         //Configuration.browserSize = "1600x920";
         Configuration.browser = "chrome";
+        Configuration.browserCapabilities.setCapability("goog:chromeOptions", Map.of( "args",
+                List.of("–no-sandbox", "–disable-dev-shm-usage", "–remote-debugging-port=9222") ));
     }
 
     // @BeforeClass(alwaysRun = true)
