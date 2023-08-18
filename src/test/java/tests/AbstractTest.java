@@ -19,7 +19,7 @@ public class AbstractTest {
 
     @BeforeSuite(alwaysRun = true)
     public void configOptions() {
-        Configuration.headless = false;
+        Configuration.headless = true;
         Configuration.timeout = 20000;
         //Configuration.browserSize = "1600x940";
         //Configuration.holdBrowserOpen = true;
