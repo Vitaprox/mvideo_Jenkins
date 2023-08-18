@@ -29,7 +29,6 @@ public class AbstractTest {
         var options = new ChromeOptions();
         options.addArguments("–no-sandbox");
         options.addArguments("–disable-dev-shm-usage");
-        options.addArguments("–remote-debugging-port=9222");
 //        Configuration.browserCapabilities.setCapability("goog:chromeOptions", Map.of( "args",
 //                List.of("–no-sandbox", "–disable-dev-shm-usage", "–remote-debugging-port=9222") ));
     }
