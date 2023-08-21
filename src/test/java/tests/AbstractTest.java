@@ -19,7 +19,7 @@ public class AbstractTest {
 
     @BeforeSuite(alwaysRun = true)
     public void configOptions() {
-        System.setProperty("webdriver.chrome.driver","ChromeDriver114/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","ChromeDriver114\chromedriver.exe");
         
         Configuration.headless = true;
         Configuration.timeout = 20000;
