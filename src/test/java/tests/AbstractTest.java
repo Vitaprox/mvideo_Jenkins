@@ -19,6 +19,8 @@ public class AbstractTest {
 
     @BeforeSuite(alwaysRun = true)
     public void configOptions() {
+        System.setProperty("webdriver.chrome.driver","ChromeDriver114/chromedriver");
+        
         Configuration.headless = true;
         Configuration.timeout = 20000;
         //Configuration.browserSize = "1600x940";
