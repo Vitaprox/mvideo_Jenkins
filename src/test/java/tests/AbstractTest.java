@@ -25,7 +25,7 @@ public class AbstractTest {
         Configuration.pageLoadTimeout = 60000;
         //Configuration.browserSize = "1600x920";
         Configuration.browser = "chrome";
-        Configuration.baseUrl = "http://localhost:8090/";
+        Configuration.baseUrl = "http://localhost:8080/";
 //        var options = new ChromeOptions();
 //        options.addArguments("–no-sandbox");
 //        options.addArguments("–disable-dev-shm-usage");
