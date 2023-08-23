@@ -35,7 +35,7 @@ public class AbstractTest {
      @BeforeClass(alwaysRun = true)
      public static void setUp() {
          //Url удалённого веб драйвера
-         Configuration.remote = "http://localhost:4444/wd/hub";
+         Configuration.remote = "http://localhost:4445/wd/hub";
          //Размер окна браузера
          //Создаём объект класса DesiredCapabilities, используется как настройка  вашей конфигурации с помощью пары ключ-значение
          DesiredCapabilities capabilities = new DesiredCapabilities();
